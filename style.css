@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: all .2s;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px; 
+    margin: 0px 5px;
+}
+
+nav ul li a{
+    color: black;
+    padding: 7px 20px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    border: 2px solid #616161;
+    border-radius: 20px;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+.left{
+    padding: 50px;
+}
+
+.left h1{
+    font-size: 70px;
+    padding: 30px 0px;
+}
+
+.left p{
+    font-size: 20px;
+    color: gray;
+    padding: 20px 0px;
+    width: 85%;
+}
+.icons{
+    padding: 30px 0px;
+    display: flex;
+    gap: 30px;
+}
+.icon{
+    font-size: 20px;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.header-btns{
+    display: flex;
+    gap: 40px;
+    padding: 30px 0px;
+}
+.header-btns button{
+    padding: 10px;
+    width: 25%;
+    background-color: #5c0191;
+    color: white;
+    font-weight: 1000;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+.header-btns button:hover{
+    transform:rotate(10deg);
+}
+.github{
+    background-color: #242424;
+}
+.github:hover{
+    background-color: #000000;
+    transform: scale(1.5);
+}
+.linkdin{
+    background-color: #2890f1;
+}
+.linkdin:hover{
+    background-color: #0054a3;
+    transform: scale(1.5);
+}
+.google{
+    background-color: #df5252;
+}
+.google:hover{
+    background-color: #b43434;
+    transform: scale(1.5);
+}
+.instagram{
+    background-color: #c926c9;
+}
+.instagram:hover{
+    background-color: #9c129c;
+    transform: scale(1.5);
+}
+.facebook{
+    background-color: #036fd4;
+}
+.facebook:hover{
+    background-color: #0254a0;
+    transform: scale(1.5);
+}
+#w-sec{
+    width: 100%;
+    display: flex;
+}
+.w-right{
+    margin-top: 50px;
+}
+.w-right h1{
+    font-size: 45px;
+    padding: 50px 0px 30px;
+}
+
+.w-f-para{
+    font-size: 20px;
+    padding: 0px 50px 20px 0px;
+    text-transform: uppercase;
+    color: gray;
+}
+.w-f-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 40px;
+    padding: 0px 50px 20px 0px;
+    color: #5e5d5d;
+    flex-wrap: wrap;
+}
+.w-s-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 40px;
+    padding: 0px 50px 20px 0px;
+    color: #5e5d5d;
+}
+.flash{
+    color: #dfdf23;
+}
+.w-s-para{
+    line-height: 40px;
+}
+.w-s-para p{
+    font-size: 17px;
+    color: #5e5d5d;
+}
+.pro-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+.progress-bg{
+    background-color: #c5c5c5;
+    width: 100%;
+    border-radius: 20px;
+}
+.progress-bg-inner-1{
+    background-color: #6bb0f0;
+    width: 85%;
+    border-radius: 20px;
+    color: transparent;
+}
+.progress-bg-inner-2{
+    background-color: #6bb0f0;
+    width: 75%;
+    border-radius: 20px;
+    color: transparent;
+}
+.progress-bg-inner-3{
+    background-color: #6bb0f0;
+    width: 65%;
+    border-radius: 20px;
+    color: transparent;
+}
+.progress p{
+    padding: 10px 10px;
+}
+#pro{
+    padding: 80px 50px 20px 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#pro img{
+    border: 2px solid #0054a3;
+    border-radius: 50%;
+    padding: 10px;
+}
+#projects{
+    padding: 80px 50px 20px 50px;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 30px;
+}
+.grid-containers{
+    padding: 20px;
+    box-shadow: -3px 5px 34px -10px #000000a8;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.grid-containers:hover{
+    background-color: #f0f0f0;
+}
+
+.project_para{
+    padding: 30px 0px;
+}
+.project_icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.project-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.foot-icon{
+    display: flex;
+    gap: 20px;
+}
+.foot-branch{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.foot-star{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.project-buttun{
+    display: grid;
+    place-items: center;
+}
+.project-btn{
+    padding: 10px;
+    width: 10%;
+    background-color: #5d0193;
+    color: white;
+    font-weight: 1000;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+.project-btn:hover{
+    transform:translateY(-10px);
+}
+#big-project{
+    padding: 80px 50px 20px 50px;
+}
+.big_head{
+    padding: 50px 0px 30px 0px;
+    font-size: 45px;
+}
+.big_para{
+    padding: 0px 0px 50px 0px;
+}
+.big_img2{
+    font-size: 70px;
+}
+.big_img{
+    display: flex;
+    width: 100%;
+    gap: 80px;
+}
+#ach{
+    padding: 80px 50px 20px 50px;
+}
+#ach h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.ach_cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 50px;
+    gap: 35px;
+}
+.ach_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: -3px 5px 34px -10px #000000a8;
+    padding: 30px;
+}
+.ach_card img{
+    width: 200px;
+    height: 170px;
+}
+.ach-para{
+    text-align: center;
+    padding: 10px;
+}
+.ach_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.ach_links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 40px;
+}
+.ach_links a{
+    color: #000000;
+    padding: 4px;
+    border-radius: 25px;
+}
+.ach_links a:hover{
+    border: 1px solid black;
+}
+#blog{
+    padding: 80px 50px 20px 50px;
+}
+
+#blog h1{
+    font-size: 50px;
+}
+#blog p{
+    margin-top: 30px;
+}
+.blog_head{
+    font-size: 5px;
+}
+.blog_cards{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+.blog_card{
+    box-shadow: -3px 5px 34px -10px #000000a8;
+    padding: 0px 0px 40px 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 50%;
+}
+.blog_arrow{
+    display: flex;
+    justify-content: end;
+}
+.arrow{
+    background-color: purple;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 25px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+#talks{
+    padding: 80px 50px 20px 50px;
+}
+#talks h1{
+    font-size: 50px;
+}
+#talks p{
+    padding-top: 20px;
+}
+.talk_cards{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.talk_card{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -3px 5px 34px -10px #000000a8;
+    border-radius: 10px;
+}
+.talk_head{
+    background-color: #a5dcff;
+    padding: 80px 40px 80px 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.talk_para{
+    padding: 30px 0px 30px 0px;
+}
+.talk_btns{
+    width: 100%;
+    padding: 0px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.talk_btn{
+    width: 25%;
+    padding: 10px;
+    border: 0;
+    background-color: #a5a9ff;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+.talk_btn:hover{
+    border: 0.5px solid #a5a9ff;
+    background-color: transparent;
+}
+#tweet{
+    padding: 80px 50px 20px 50px;
+}
+#prodcast{
+    padding: 80px 50px 20px 50px;
+}
+#prodcast h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+#rech{
+    padding: 80px 50px 20px 50px;
+}
+#rech h1{
+    font-size: 50px;
+}
+.rech_first_para{
+    padding: 20px 0px 20px 0px;
+    color: #616161;
+    font-weight: 400;
+}
+.rech_icons{
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    gap: 20px;
+    align-items: center;
+    font-size: 25px;
+}
+.rech-quote{
+    font-weight: bold;
+    font-size: 20px;
+}
+.rech_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#rech img{
+    border: 2px solid #0054a3;
+    border-radius: 50%;
+    padding: 10px;
+}
